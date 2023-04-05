@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Game</title>
+    </head>
+    <body bgcolor="teal">
+        <form method="get" onsubmit="return check()">
+        <input type='text' name='number' >
+        <button> Submit </button> 
+    </form>
+    <script type="text/javascript">
+        function rand(){
+            return Math.floor(Math.random()*1000+1);
+        }
+        z=rand();
+       
+        function check(){
+            x=document.forms[0].elements[0].value;
+            if(z>x){
+                alert("Your number is low.")
+              
+            }
+            if(x>z)
+            {
+                alert("Your number is high ");
+               
+            }
+            if(x==z){
+                document.write("<h1> Congratulations its the correct number</h1>");
+                return true;
+
+            }
+            return false;
+        
+        }
+    </script>
+    </script>
+    </body>
+</html>

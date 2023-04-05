@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>EXER 24</title>
+        
+    </head>
+    <body bgcolor="teal">
+        <h1>TEMPERATURE CONVERTER</h1>
+        <form>
+            <input type="text" onchange="convert()">
+            <select onchange="convert()">
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+            <input type="text">
+            <select onchange="convert()">
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+        <script>
+         
+            function convert(){
+                iv=parseFloat(document.forms[0].elements[0].value);
+                i=document.forms[0].elements[1].value;
+                o3=document.forms[0].elements[3].value;
+                if(i=="Celsius" && o3=="Kelvin"){
+                    res=iv+273.15;
+                }
+                else if(i=="Celsius" && o3=="Fahrenheit"){
+                    res=(iv*9/5)+32;
+                }
+                else if(i=="Fahrenheit" && o3=="Celsius"){
+                    res=(iv-32)*5/9;
+                }
+                else if(i=="Fahrenheit" && o3=="Kelvin"){
+                    res=((iv-32)*5/9)+273.15;
+                }
+                else if(i=="Kelvin" && o3=="Celsius"){
+                    res=iv-273.15;
+                }
+                else if(i=="Kelvin" && o3=="Fahrenheit"){
+                    res=((iv-273.15)*9/5)+32;
+                }
+                else{
+                    res=iv;
+                }
+                document.forms[0].elements[2].value=res;
+            }
+         
+        </script>
+    </body>
+</html>
