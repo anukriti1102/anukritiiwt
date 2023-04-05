@@ -1,0 +1,19 @@
+body{
+	background-image:linear-gradient(rgba(34,340,50,.5),rgb(34,134,134),rgb(334,730,56)),url("images\2.jpeg");
+}
+
+h1{
+	font-size:30px;
+	font-weight:900;
+	color:green;
+}
+p{
+	font-size:15px;
+	color:blue;
+	line-height:5;
+	font-weight:900;
+}
+h2{
+	font-size:20px;
+	color:yellow;
+}
