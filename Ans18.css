@@ -1,0 +1,60 @@
+.contttt{
+	height:600px;
+	border:solid 5px red;
+	display:flex;
+	flex-wrap: nowrap;
+	align-items:center;
+	justify-content:center;
+	flex-direction:row;
+	text-shadow:0 0 7px red;
+	background-color:orange;
+	
+}
+.contttt>div{
+	height:200px;
+	width:200px;
+	background-color:yellow;
+	margin:14px;
+	font-size:30px;
+	font-style:italic;
+}	
+.contttt>div:hover{
+	background-color:teal;
+	color:white;
+	text-shadow:0 0 7px yellow;
+	}
+body:hover{
+	background-color:blue;
+	border:solid 5px lighstskyblue;
+}
+
+
+
+
+@keyframes animate2
+{
+from{
+		top:0;
+		left:0;
+		transform:rotate(0deg);
+	}
+	50%{left:400px;
+		top:0;
+		}
+to{
+		left:400px;
+		top:400px;
+		transform:rotate(180deg);
+	}
+}
+
+.contttt>div{
+				position:relative;
+				animation-name:animate2;
+				animation-duration:7s;
+				animation-iteration-count:infinite;
+				animation-direction:alternative;
+				}
+
+
+

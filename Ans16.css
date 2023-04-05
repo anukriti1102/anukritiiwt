@@ -1,0 +1,25 @@
+body,html{
+	height:600;
+}
+
+body{
+	background-image:url("https://st2.depositphotos.com/1793519/51002/i/600/depositphotos_510028468-stock-photo-render-abstract-modern-blue-background.jpg");
+	height:600;
+	background-position: center;
+	background-size:cover;
+	border-color:blue;
+	border-style:solid;
+	border-width:10px;
+	padding:10px 30px 10px 15px;
+	margin:10px;
+}
+p{
+	font-size:30px;
+	color:white;
+	font-style:italic;
+	font-weight:800;
+	text-align:center;
+}
+	
+
+
